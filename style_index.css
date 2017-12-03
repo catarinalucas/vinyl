@@ -1,0 +1,128 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container_landing {
+    display: grid;
+    grid-template-columns: 100px 160px auto auto auto auto auto auto auto auto auto 20px;
+    grid-column-gap: 10px;
+    grid-template-rows: 15vh 5vh 15vh 5vh 15vh 5vh 15vh;
+    grid-auto-rows: 70px;
+    padding-top: 20px;
+    position: relative;
+    /*z-index: -1;*/
+    top: 100px;
+
+}
+
+.container_back {
+    display: grid;
+    grid-template-columns: 100px 160px auto auto auto auto auto auto auto auto auto 20px;
+    grid-column-gap: 10px;
+    grid-template-rows: 20vh 20vh 20vh 20vh;
+    grid-auto-rows: 70px;
+    padding-top: 20px;
+    width:100%;
+    position: fixed;
+    z-index: -2;
+    top: 100px;
+}
+
+.fixed_back {
+    grid-column: 2/12;
+    grid-row: 1/5;
+    background-color: #B10605;
+}
+
+.vinyl_3 {
+    width: 60%;
+    height: auto;
+    grid-column: 1/13;
+    grid-row: 1/5;
+    justify-self: end;
+}
+
+a:link{
+    text-decoration: none;
+    color: #B10605;
+}
+
+a:visited {
+    color: black;
+}
+
+.cat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 5em;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.cat:hover {
+    color: #5E5E5E;
+    cursor: pointer;
+}
+
+.sub_cat {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+
+    padding-top: 15px;
+    margin-left: 50px;
+}
+
+.new_rel {
+    grid-column: 1/9;
+    grid-row: 1/2;
+}
+
+.sub_new_rel {
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+
+.most_wan {
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+
+.sub_most_wan {
+    grid-column: 1/9;
+    grid-row: 4/5;
+}
+
+.surprise {
+    grid-column: 1/9;
+    grid-row: 5/6;
+}
+
+.sub_surprise {
+    grid-column: 1/9;
+    grid-row: 6/7;
+}
+
+.genres {
+    grid-column: 1/9;
+    grid-row: 7/8;
+}
+
+.sub_genres {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3.5em;
+
+    grid-column: 2/9;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.sub_genres:hover {
+    color: whitesmoke;
+    cursor: pointer;
+}

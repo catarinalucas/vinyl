@@ -1,0 +1,199 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 20;
+}
+
+.container_header {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    grid-template-rows: 1fr;
+    margin: 25px 25px 0px 25px;
+    position: relative;
+    background-color: white;
+}
+
+.container_search {
+    display: grid;
+    grid-template-columns: auto 30px auto auto auto auto auto auto auto auto auto 20px;
+    grid-column-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 20px;
+    position: relative;
+    background-color: white;
+}
+
+.logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #B10605;
+}
+
+.logo:link {
+    color: #B10605;
+    text-decoration: none;
+}
+
+.logo:visited {
+    color: #B10605;
+}
+
+.signup {
+    grid-column: 12/13;
+    grid-row: 1/2;
+    justify-self: end;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #B10605;
+}
+
+.signup:link {
+    color: #B10605;
+    font-weight: 400;
+}
+
+.signup:hover {
+    color: #5E5E5E;
+    cursor: pointer;
+}
+
+.login {
+    grid-column: 11/12;
+    grid-row: 1/2;
+    justify-self: end;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #B10605;
+}
+
+.login:link {
+    color: #B10605;
+    font-weight: 400;
+}
+
+.login:hover {
+    color: #5E5E5E;
+    cursor: pointer;
+}
+
+.s_icon {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.s_text {
+    grid-column: 3/13;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.s_line {
+    grid-column: 2/12;
+    grid-row: 2/3;
+    width: 100%;
+    height: 1px;
+    align-self: flex-start;
+}
+
+.popup_signup {
+    visibility: hidden;
+    position: fixed;
+    z-index: 30;
+
+    width: 25%;
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: 8vh 6vh 6vh 6vh 9vh;
+    grid-row-gap: 10px;
+
+    top: 60px;
+    left: 75%;
+    justify-self: stretch;
+    background-color: white;
+
+    border-top: 3px solid #B10605;
+}
+
+.input {
+    grid-column: 2/3;
+}
+
+.popup_login {
+    visibility: hidden;
+    position: fixed;
+    z-index: 30;
+
+    width: 25%;
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: 8vh 6vh 3vh 9vh;
+    grid-row-gap: 10px;
+
+    top: 60px;
+    left: 75%;
+    justify-self: stretch;
+    background-color: white;
+
+    border-top: 3px solid #B10605;
+}
+
+.login_button {
+    grid-row: 4/5;
+}
+
+.forgot_pass {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: end;
+    color: #B10605;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+input[type=text], [type=password]{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #404040;
+
+    border-style: none none solid none;
+    border-bottom: 2px solid #B10605;
+    align-self: end;
+}
+
+button[type=submit] {
+    grid-column: 2/3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    color: #B10605;
+
+    background-color: white;
+    border: none;
+}
+
+button:hover {
+    color: #404040;
+}
