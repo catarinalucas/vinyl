@@ -4,23 +4,13 @@
 
 <?php
 include 'head.php';
+include 'db.php';
 session_start();
 
 //inicializar as variáveis e limpar os campos
 $username = $email = $password = $double_password = '';
 $erro_name= $erro_email = $erro_pass = $erro_confirm ='';
 
-
-$servername = "localhost";
-$nome = "root";
-$pass = "";
-$bd = "vinyl";
-
-//conexao a base de dados
-$conn = mysqli_connect($servername,$nome,$pass,$bd);
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
 
 //Erros - caso tenha clicado no submit
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
