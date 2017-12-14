@@ -1,7 +1,7 @@
 <DOCTYPE html>
     <html>
     <?php
-    include 'head.php';
+    include 'head.html';
     include 'db.php';
     session_start();
     ?>
@@ -44,23 +44,23 @@
     <!--UPDATE PRICE-->
     <form action="update.php" method="post">
         <h5>Update Price</h5>
-    <input type="text" name="update_name" placeholder="Insert Album Name">
-    <br>
+        <input type="text" name="update_name" placeholder="Insert Album Name">
+        <br>
         <input type="text" name="update_artist" placeholder="Insert Artist">
         <br>
-    <input type="number" name="new_price" placeholder="New Price">
-    <br>
-    <button type="submit" class="confirm_button">Confirm</button>
+        <input type="number" name="new_price" placeholder="New Price">
+        <br>
+        <button type="submit" class="confirm_button">Confirm</button>
     </form>
     <!--REMOVE VINYL-->
     <form action="remove.php" method="post">
         <h5>Remover Vinil</h5>
-    <!--Ver se não foi comprado ainda-->
-    <input type="text" name="remove_name" placeholder="Insert Album Name">
-    <br>
+        <!--Ver se não foi comprado ainda-->
+        <input type="text" name="remove_name" placeholder="Insert Album Name">
+        <br>
         <input type="text" name="remove_artist" placeholder="Insert Artist">
         <br>
-    <button type="submit" class="remover">Remove</button>
+        <button type="submit" class="remover">Remove</button>
     </form>
     </body>
     </html>

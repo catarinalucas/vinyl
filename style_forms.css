@@ -1,0 +1,107 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: #B10605;
+}
+
+.popup_signup {
+    width: 25%;
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: 8vh 6vh 6vh 6vh 9vh 6vh auto;
+    grid-row-gap: 10px;
+
+    top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: stretch;
+    background-color: white;
+
+    border-top: 3px solid #B10605;
+    border-bottom: 1px solid #B10605;
+}
+
+.input {
+    grid-column: 2/3;
+}
+
+.already {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: center;
+}
+
+.already_log {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
+}
+
+.error {
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-self: center;
+    text-align: center;
+    font-size: 0.8em;
+    background-color: #B10605;
+    color: white;
+}
+
+.popup_login {
+    width: 25%;
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: 8vh 6vh 9vh 6vh auto;
+    grid-row-gap: 10px;
+
+    top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: stretch;
+    background-color: white;
+
+    border-top: 3px solid #B10605;
+    border-bottom: 1px solid #B10605;
+}
+
+.login_button {
+    grid-row: 3/4;
+}
+
+input[type=text], [type=password]{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #404040;
+
+    border-style: none none solid none;
+    border-bottom: 2px solid #B10605;
+    align-self: end;
+}
+
+button[type=submit] {
+    grid-column: 2/3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    color: #B10605;
+
+    background-color: white;
+    border: none;
+}
+
+
+button:hover {
+    color: #404040;
+}
